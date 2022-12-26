@@ -4,4 +4,4 @@ repositorio de práctica de maquetación
 
 #Página del proyecto
 
-https://Danilor96.github.io/practica-maquetacion
+https://Danilor96.github.io/cv-portafolio
