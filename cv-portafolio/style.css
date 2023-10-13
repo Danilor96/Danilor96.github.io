@@ -1,7 +1,7 @@
 /*********** Custom Properties ***********/
 
 :root {
-  --first-color: #d90062;
+  --first-color: #ff2300;
   --first-alpha-color: rgba(217, 0, 98, 0.75);
   --second-color: #14192d;
   --second-alpha-color: rgba(20, 25, 45, 0.75);
@@ -360,7 +360,7 @@ p {
 
 .modal-close {
   position: absolute;
-  top: 1rem;
+  top: 0.5rem;
   right: 1rem;
 }
 
