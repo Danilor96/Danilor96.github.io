@@ -2,7 +2,7 @@
 
 :root {
   --first-color: #ff2300;
-  --first-alpha-color: rgba(217, 0, 98, 0.75);
+  --first-alpha-color: rgba(70, 62, 66, 0.75);
   --second-color: #14192d;
   --second-alpha-color: rgba(20, 25, 45, 0.75);
   --third-color: #501464;
@@ -377,26 +377,12 @@ p {
 
 /* ProgresBar */
 
-progress {
-  width: 100%;
-  height: 1rem;
-  background-color: var(--gray-color);
-}
-
-progress::-webkit-progress-bar {
-  background-color: var(--gray-color);
-}
-
-progress::-webkit-progress-value {
-  background-color: var(--gray-dark-color);
-}
-
-progress::-moz-progress-bar {
-  background-color: var(--gray-dark-color);
-}
-
 .progress {
-  margin: 1rem auto;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  justify-items: center;
+  gap: 0.8rem;  
+  margin: 1rem 0;
 }
 
 .progress > p {
@@ -404,6 +390,24 @@ progress::-moz-progress-bar {
   display: flex;
   justify-content: space-between;
   font-size: 0.85rem;
+  color: #ff2300;
+}
+
+@media screen and (min-width: 768px) {
+  .progress{ 
+    grid-template-columns: repeat(3, auto);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .progress{    
+    justify-items: start;
+  }
+}
+
+.conocimientos{
+  display: flex;
+  gap: 0.5rem;
 }
 
 /*********** Utilities ***********/
@@ -610,6 +614,11 @@ progress::-moz-progress-bar {
   color: var(--title-color);
 }
 
+.portfolio-modal img{
+  width: 8rem;
+  height: auto;
+}
+
 .portfolio-details {
   display: grid;
   grid-template-columns: 40% 60%;
@@ -720,5 +729,10 @@ progress::-moz-progress-bar {
 
   .services .section-title {
     grid-column: span 3;
+  }
+
+  .portfolio-modal img {
+    width: 50%;
+    height: auto;
   }
 }
